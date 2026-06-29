@@ -1,0 +1,18 @@
+# secrets — NEVER commit
+.mcp.json
+*.pem
+*.key
+.env
+.env.*
+
+# operational artifacts with PII (UUIDs, birthdays)
+backups/
+
+# editor/OS
+.DS_Store
+node_modules/
+*.zip
+*.bak
+*.bak2
+*.bak3
+*.bak4

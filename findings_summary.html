@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skin Microbiome — Findings Summary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf8f2;--paper:#fffdf9;--green:#00532f;--green2:#006837;--accent:#519f7d;--gold:#c79a1e;
+  --ink:#1b2a22;--mut:#6f7d72;--bd:#e6e3d8;--bd2:#d8dccd;--up:#1a8a55;--down:#cf7430;
+  --serif:'Instrument Serif',Georgia,serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);
+  font:11px/1.45 'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:830px;margin:0 auto;padding:30px 34px}
+.lbl{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 7px}
+h1{font-family:var(--serif);font-weight:400;font-size:39px;line-height:.98;letter-spacing:.3px;color:var(--green);margin:0}
+.sub{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--mut);margin:5px 0 0}
+.meta{font-family:var(--mono);font-size:9px;color:var(--mut);margin:11px 0 0;letter-spacing:.01em}
+.gold-rule{height:2px;background:var(--gold);width:54px;margin:13px 0 18px;border-radius:2px}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.card{background:var(--paper);border:1px solid var(--bd);border-radius:13px;padding:13px 15px}
+.card h3{font-family:var(--serif);font-weight:400;font-size:18px;color:var(--green);margin:0 0 1px;line-height:1.05}
+.card .tag{font-family:var(--mono);font-size:8.5px;color:var(--accent);letter-spacing:.04em;display:block;margin:0 0 6px}
+.card p{margin:0 0 5px}
+.card .lever{font-size:10px;color:var(--green2)}
+.card .lever b{font-weight:600}
+.cols{display:grid;grid-template-columns:1.18fr 1fr;gap:16px;margin-top:18px}
+.tier{display:flex;gap:9px;margin:0 0 9px}
+.dot{flex:0 0 auto;width:19px;height:19px;border-radius:50%;font-family:var(--serif);font-size:13px;display:flex;align-items:center;justify-content:center;color:#fff;margin-top:1px}
+.tA{background:var(--up)}.tB{background:var(--gold)}.tC{background:#a7afa2}
+.tier h4{margin:0 0 2px;font-size:11px;font-weight:700}
+.tier .lead{color:var(--mut);font-weight:500}
+.tier p{margin:0;font-size:10.5px}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.box{background:#f4f1e6;border:1px solid var(--bd2);border-radius:13px;padding:13px 15px;margin-bottom:14px}
+.box h3{font-family:var(--serif);font-weight:400;font-size:18px;color:var(--green);margin:0 0 7px}
+.box ul,.path ul{margin:0;padding:0;list-style:none}
+.box li{position:relative;padding:0 0 5px 16px;font-size:10.5px}
+.box li:before{content:'×';position:absolute;left:1px;top:-1px;color:var(--down);font-weight:700}
+.box li b{color:var(--ink);font-weight:600}
+.path h3{font-family:var(--serif);font-weight:400;font-size:18px;color:var(--green);margin:0 0 7px}
+.path li{position:relative;padding:0 0 5px 16px;font-size:10.5px}
+.path li:before{content:'→';position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
+.path li b{font-weight:600}
+.quote{margin:17px 0 0;padding:13px 17px;border-left:3px solid var(--gold);background:var(--paper);border-radius:0 10px 10px 0}
+.quote p{font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.35;color:var(--green);margin:0}
+.foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:9px;border-top:1px solid var(--bd);font-family:var(--mono);font-size:8.5px;color:var(--mut)}
+@media print{@page{size:letter;margin:0}html,body{background:#fff}.page{padding:24px 30px;max-width:none}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="lbl">Skin microbiome · 16S findings</p>
+  <h1>What the skin community is telling us</h1>
+  <p class="sub">What our 16S data shows, what it means clinically, and what it can’t yet say</p>
+  <p class="meta">16S rRNA · bacteria, genus/species · ≈200 sequenced, 93 with full quiz · cross-sectional · associations, not diagnoses</p>
+  <div class="gold-rule"></div>
+
+  <p class="lbl">Four axes the data can speak to</p>
+  <div class="grid4">
+    <div class="card">
+      <h3>Barrier integrity</h3><span class="tag">resident vs. transient</span>
+      <p>C. acnes + S. epidermidis dominance vs. the load of oral/environmental genera (Streptococcus, Neisseria, Haemophilus, Prevotella). Rising transients = a disturbed or permeable surface.</p>
+      <p class="lever"><b>Most defensible dysbiosis readout.</b></p>
+    </div>
+    <div class="card">
+      <h3>Staph defense balance</h3><span class="tag">atopic / barrier</span>
+      <p>S. epidermidis (makes antimicrobials, suppresses C. acnes) vs. the S. aureus-group (pathobiont, drives eczema flares). Their ratio is the atopic axis.</p>
+      <p class="lever"><b>Lever:</b> epidermidis ÷ aureus as a defense score.</p>
+    </div>
+    <div class="card">
+      <h3>Corynebacterium shift</h3><span class="tag">sensitivity-adjacent</span>
+      <p>Lipophilic Coryne species (incl. C. kroppenstedtii) track sebaceous, occluded, sometimes inflamed or odor-prone skin.</p>
+      <p class="lever"><b>Lever:</b> a flag for sensitive / reactive profiles.</p>
+    </div>
+    <div class="card">
+      <h3>Perturbation signature</h3><span class="tag">community disruption</span>
+      <p>Antibiotics, antibacterial soaps and harsh actives knock down the dominant commensals; secondary Cutibacterium &amp; Staph species expand and diversity drops.</p>
+      <p class="lever"><b>Lever:</b> flag antimicrobial overuse as a stressor.</p>
+    </div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <p class="lbl">Strongest signals, by confidence</p>
+      <div class="tier"><div class="dot tA">A</div><div>
+        <h4>Trust it <span class="lead">— mechanism + scans agree</span></h4>
+        <p>Recent antibiotics <span class="up">↑</span> C. avidum; antibacterial soap <span class="up">↑</span> S. warneri; antibiotics &amp; eczema <span class="down">↓</span> diversity — the perturbation axis. Irritation <span class="up">↑</span> Neisseria; rosacea <span class="down">↓</span> overall scan &amp; <span class="down">↓</span> moisture — the barrier axis.</p>
+      </div></div>
+      <div class="tier"><div class="dot tB">B</div><div>
+        <h4>Worth chasing <span class="lead">— plausible leads</span></h4>
+        <p>Physical scrubs <span class="down">↓</span> richness. Diet: carbs <span class="down">↓</span> Staph, processed food <span class="up">↑</span> redness, meat <span class="up">↑</span> S. hominis. Sunscreen <span class="up">↑</span> oral Strep, <span class="down">↓</span> S. capitis.</p>
+      </div></div>
+      <div class="tier"><div class="dot tC">C</div><div>
+        <h4>Discount <span class="lead">— noise or reverse-causal</span></h4>
+        <p>Sparse-taxa hits (Dolosigranulum, Finegoldia, Moraxella). “Product → clearer skin” is reverse-causal — people buy the product <i>because</i> of their skin.</p>
+      </div></div>
+      <div class="quote"><p>A behaviour-and-barrier map of the bacterial skin community — strong on perturbation and barrier signals, deliberately silent on acne-strain and fungal questions until the assay can see them.</p></div>
+    </div>
+    <div>
+      <div class="box">
+        <h3>What 16S can’t tell us</h3>
+        <ul>
+          <li><b>Acne is a strain story</b> — not callable from C. acnes % (no phylotypes).</li>
+          <li><b>Malassezia is invisible</b> — fungal; no “fungal acne” or seb. derm.</li>
+          <li><b>No clean S. aureus call</b> — only an “aureus-group” flag.</li>
+          <li><b>No function</b> — sebum, pH, antimicrobial peptides only inferred.</li>
+          <li><b>On the face, low diversity is healthy</b> — don’t read “more = better.”</li>
+        </ul>
+      </div>
+      <div class="path">
+        <p class="lbl" style="margin-bottom:7px">Path to clinical</p>
+        <ul>
+          <li><b>Shotgun metagenomics</b> → C. acnes phylotypes + strain-level aureus (unlocks acne).</li>
+          <li><b>ITS sequencing</b> → Malassezia (unlocks sensitivity / seb. derm).</li>
+          <li><b>Longitudinal / before–after</b> → turns associations into causes.</li>
+          <li><b>Healthy reference panel</b> → a true “distance-from-healthy” dysbiosis score.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Milieu · skin microbiome research</span>
+    <span>Spearman / Fisher · FDR-controlled · exploratory leads, not diagnoses</span>
+  </div>
+
+</div>
+</body>
+</html>
