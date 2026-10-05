@@ -12,7 +12,8 @@ git init && git add -A && git commit -m "Milieu microbiome explorer + project me
 
 ## 2. Connect Supabase (read-only)
 - Get a **personal access token**: Supabase dashboard → account → Access Tokens.
-- Edit `.mcp.json` and paste it into `SUPABASE_ACCESS_TOKEN`.
+- A `.mcp.json` template is included; paste your token into `SUPABASE_ACCESS_TOKEN`.
+- Or, get the token from `~/milieu-crm/.env` if you have access: `grep SUPABASE_SERVICE_ROLE_KEY ~/milieu-crm/.env`
 - The config uses `--read-only`, so Claude Code can query all your projects but **cannot modify** them.
   (No `--project-ref` is set, so all three projects are reachable; pass one if you want to scope it.)
 - Requires Node/npx installed (`node -v`). The token is a secret — `.mcp.json` is git-ignored by
